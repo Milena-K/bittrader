@@ -1,0 +1,18 @@
+.qualities h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.q-img {
+  width: 20%;
+}
+
+.q-body {
+  margin: 5px;
+  padding: 0 15px;
+}
+
+.q-col {
+  display: flex;
+  margin: 10px 20px;
+}

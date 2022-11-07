@@ -1,0 +1,10 @@
+.stats {
+  display: flex;
+  justify-content: center;
+}
+
+.stats > * {
+  border-right: 1px solid black;
+  text-align: center;
+  padding: 15px;
+}

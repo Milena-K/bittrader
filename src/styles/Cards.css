@@ -1,0 +1,11 @@
+.cards {
+  margin: 40px;
+}
+
+.card-img {
+  width: 200px;
+}
+
+.card-body {
+  display: inline-block;
+}

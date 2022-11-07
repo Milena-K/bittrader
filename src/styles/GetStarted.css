@@ -1,0 +1,13 @@
+.get-started {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+}
+
+.btn-get-started {
+  margin: 20px;
+  padding: 15px 55px;
+}

@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+  margin: 0% 2%;
+}
+
+.navbar > * {
+  margin-left: 5px;
+}
