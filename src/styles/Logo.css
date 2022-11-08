@@ -1,3 +1,14 @@
 .logo {
-  padding: 20%;
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 300px;
+}
+
+.logo .text {
+  margin-left: 8%;
 }

@@ -2,3 +2,8 @@
   margin: 0;
   padding: 0;
 }
+
+.App .center {
+  margin: auto;
+  max-width: 2000px;
+}

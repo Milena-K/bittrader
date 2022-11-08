@@ -7,19 +7,21 @@ import Widget from './Widget';
 import GetStarted from './GetStarted';
 import Cards from './Cards';
 import Qualities from './Qualities';
-// import Footer from './Footer';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Logo />
-      <Stats />
+      <div className='center'>
+        <Navbar />
+        <Logo />
+        <Stats />
+      </div>
       <Widget />
       <GetStarted />
       <Cards />
       <Qualities />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

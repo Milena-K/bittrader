@@ -3,9 +3,25 @@
 }
 
 .card-img {
-  width: 200px;
+  width: auto;
+}
+
+.card-img img {
+  width: 150px;
+  height: 150px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.card-text {
+  width: auto;
 }
 
 .card-body {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+.cards .card {
+  margin-top: 20px;
 }

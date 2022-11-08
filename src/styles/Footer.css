@@ -1,0 +1,40 @@
+.footer {
+  padding: 50px;
+  margin-top: 100px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.footer-title {
+  font-weight: 800;
+  font-size: 16px;
+  color: white;
+  margin-top: 12px;
+}
+
+.footer a {
+  font-size: 16px;
+  color: grey;
+  text-decoration: none;
+  width: auto;
+}
+
+.footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.copyright {
+  color: grey;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.copyright p {
+  margin: 0;
+  padding: 13px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer .row {
+  justify-content: space-between;
+}

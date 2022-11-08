@@ -1,7 +1,6 @@
 .widget {
-  height: 600px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
 }

@@ -1,10 +1,15 @@
+.qualities {
+  margin: 90px 0px;
+}
+
 .qualities h1 {
   text-align: center;
   margin: 30px;
 }
 
 .q-img {
-  width: 20%;
+  height: 80px;
+  width: 80px;
 }
 
 .q-body {
@@ -15,4 +20,8 @@
 .q-col {
   display: flex;
   margin: 10px 20px;
+}
+
+.qualities .row {
+  justify-content: space-evenly;
 }

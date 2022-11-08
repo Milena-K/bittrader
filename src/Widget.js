@@ -1,8 +1,10 @@
 import "./styles/Widget.css";
+import { AdvancedChart } from "react-tradingview-embed";
+
 const Widget = () => {
   return (
     <div className="widget">
-      <h1> ...Something important... </h1>
+      <AdvancedChart widgetProps={{ "theme": "dark" }} />
     </div>
   )
 }

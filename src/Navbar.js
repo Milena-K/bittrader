@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <Button variant="outline-dark">SIGN IN</Button>
-      <Button variant="outline-dark">REGISTER</Button>
+      <Button variant="outline-dark" active>REGISTER</Button>
       <Button variant="outline-dark">TRADING</Button>
       <Button variant="outline-dark">ABOUT US</Button>
     </div>
