@@ -12,14 +12,18 @@ import Footer from './Footer';
 function App() {
   return (
     <div className="App">
-      <div className='center'>
-        <Navbar />
-        <Logo />
-        <Stats />
+      <div className="background-group">
+        <div className="center-nav">
+          <Navbar />
+          <Logo />
+        </div>
       </div>
-      <Widget />
-      <GetStarted />
-      <Cards />
+      <div className='till-cards'>
+        <Stats />
+        <Widget />
+        <GetStarted />
+        <Cards />
+      </div>
       <Qualities />
       <Footer />
     </div>

@@ -2,15 +2,15 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './styles/Qualities.css';
-import AISVG from './img/ai-pie.svg';
-import MarginSVG from './img/balance.svg';
-import SecuritySVG from './img/security.svg';
-import PaymentSVG from './img/coins.svg';
-import CrossSVG from './img/cross-platform.svg';
-import WorldSVG from './img/global.svg';
-import LegalSVG from './img/legal.svg';
-import LiquiditySVG from './img/liquidity.svg';
-import CompetetiveSVG from './img/percentage.svg';
+// import AISVG from './img/ai-pie.svg';
+// import MarginSVG from './img/balance.svg';
+// import SecuritySVG from './img/security.svg';
+// import PaymentSVG from './img/coins.svg';
+// import CrossSVG from './img/cross-platform.svg';
+// import WorldSVG from './img/global.svg';
+// import LegalSVG from './img/legal.svg';
+// import LiquiditySVG from './img/liquidity.svg';
+// import CompetetiveSVG from './img/percentage.svg';
 
 const Qualities = () => {
   return (
@@ -18,73 +18,73 @@ const Qualities = () => {
       <h1>WHY MILLIONS CHOSE BITFAST TRADE</h1>
       <Container>
         <Row md={1} lg={4}>
-          <Col className="q-col">
-            <img src={PaymentSVG} className="q-img" />
+          <div className='q-card'>
+            <div class="index-icon payment" />
             <div className='q-body'>
               <h3>PAYMENT OPTIONS</h3>
               <p> Most popular methods: electronic wallets, blockchain, cryptocurrency</p>
             </div>
-          </Col>
-          <Col className="q-col">
-            <img src={SecuritySVG} className="q-img" />
+          </div>
+          <div className='q-card'>
+            <div class="index-icon security" />
             <div className='q-body'>
               <h3>STRONG SECURITY</h3>
               <p>Protection against DDoS attacks, full data encryption, compliant with PCI DSS standards </p>
             </div>
-          </Col>
-          <Col className="q-col">
-            <img src={WorldSVG} className="q-img" />
+          </div>
+          <div className='q-card'>
+            <div class="index-icon coverage" />
             <div className='q-body'>
               <h3>WORLD COVERAGE</h3>
               <p>Providing services in 100% countries around the globe.</p>
             </div>
-          </Col>
+          </div>
         </Row>
         <Row md={1} lg={4}>
-          <Col className="q-col">
-            <img src={LegalSVG} className="q-img" />
+          <div className='q-card'>
+            <div class="index-icon legal" />
             <div className='q-body'>
               <h3>LEGAL COMPLIANCE</h3>
               <p>Registration in Singapore, MSB status in FinCEN, essential licenses and strong relations with banks </p>
             </div>
-          </Col>
-          <Col className="q-col">
-            <img src={MarginSVG} className="q-img" />
+          </div>
+          <div className='q-card'>
+            <div class="index-icon margin" />
             <div className='q-body'>
               <h3>MARGIN TRADING</h3>
               <p>1:2 and 1:3 leverages, automatic funds borrowing, no extra accounts needed, negative balance protection. </p>
             </div>
-          </Col>
-          <Col className="q-col">
-            <img src={CompetetiveSVG} className="q-img" />
+          </div>
+          <div className='q-card'>
+            <div class="index-icon comissions" />
             <div className='q-body'>
               <h3>COMPETITIVE COMMISSIONS</h3>
               <p>Reasonable trading fees for takers and makers, special conditions for high volume traders, strong offers for market makers.</p>
             </div>
-          </Col>
+          </div>
         </Row>
         <Row md={1} lg={4}>
-          <Col className="q-col">
-            <img src={CrossSVG} className="q-img" />
+          <div className='q-card'>
+            <div class="index-icon cross-platform" />
             <div className='q-body'>
               <h3>CROSS-PLATFORM TRADING </h3>
               <p>Trading via website, <a href='#'>mobile app</a>, <a href='#'>WebSocket </a> and <a href='#'>REST API.</a> <a href='#'>FIX API</a> for institutional traders </p>
             </div>
-          </Col>
-          <Col className="q-col">
-            <img src={AISVG} className="q-img" />
+          </div>
+          <div className='q-card'>
+            <div class="index-icon payment" />
             <div className='q-body'>
               <h3>AI-BASED ASSISTANCE</h3>
               <p>AI market predictions with machine learning on big data sets.</p>
             </div>
-          </Col>
-          <Col className="q-col">
-            <img src={LiquiditySVG} className="q-img" />
+          </div>
+          <div className='q-card'>
+            <div class="index-icon liquidity" />
             <div className='q-body'>
               <h3>HIGH LIQUIDITY</h3>
               <p>Fast order execution, low spread, access to high liquidity orderbook for top currency pairs</p>
             </div>
-          </Col>
+          </div>
         </Row>
       </Container>
     </div>

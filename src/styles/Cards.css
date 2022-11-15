@@ -1,9 +1,9 @@
 .cards {
   margin: 40px;
 }
-
 .card-img {
   width: auto;
+  margin-right: 20px;
 }
 
 .card-img img {
@@ -24,4 +24,36 @@
 
 .cards .card {
   margin-top: 20px;
+}
+
+.buy-bitcoins {
+  margin: 0 auto;
+  min-width: 10px;
+  width: 120px;
+  height: 101px;
+  background: url(../img/sprite-index.svg) no-repeat;
+  background-size: 630%;
+  background-position: -0.3% 79.3%;
+}
+
+.trade-icon {
+  margin: 0 auto;
+  min-width: 10px;
+  width: 120px;
+  height: 101px;
+  background: url(../img/sprite-index.svg) no-repeat;
+  background-size: 630%;
+  background-position: 20.2% 79.3%;
+}
+
+.card {
+  background: #1c8fbb;
+  padding: 15px 5px;
+  margin: 0 0 10px;
+  color: #fff;
+  overflow: hidden;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  border-radius: 0;
 }

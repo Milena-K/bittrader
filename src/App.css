@@ -1,9 +1,22 @@
 .App {
   margin: 0;
   padding: 0;
+  background: #182643;
 }
 
-.App .center {
-  margin: auto;
-  max-width: 2000px;
+.App .center-nav {
+  margin: 0 20%;
+}
+
+.App .background-group {
+  width: 100%;
+  background: #1c5d7a url(./img/background-index4.png) no-repeat 50% 100%;
+  background-clip: border-box;
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.App .till-cards {
+  background: #182643;
 }

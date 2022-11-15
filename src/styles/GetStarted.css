@@ -1,13 +1,22 @@
 .get-started {
+  color: white;
   text-align: center;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
-  border-top: 10px solid black;
-  border-bottom: 10px solid black;
+  border-top: 10px solid #1783ac;
+  border-bottom: 10px solid #1783ac;
+  background: #00c2d2;
+}
+
+.get-started h5 {
+  font-size: 25px;
+  font-weight: 300;
 }
 
 .btn-get-started {
   margin: 20px;
   padding: 15px 55px;
+  border-width: 3px;
+  font-weight: bold;
 }

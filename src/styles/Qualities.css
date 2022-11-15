@@ -1,20 +1,26 @@
 .qualities {
-  margin: 90px 0px;
+  padding: 90px 0px;
+  background-color: #0f4c77;
+  color: white;
+  margin-top: 0;
 }
 
-.qualities h1 {
-  text-align: center;
-  margin: 30px;
-}
-
-.q-img {
-  height: 80px;
-  width: 80px;
+.qualities h3 {
+  display: block;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  position: relative;
+  margin: 0 0 5px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .q-body {
   margin: 5px;
-  padding: 0 15px;
+  padding-left: 65px;
 }
 
 .q-col {
@@ -24,4 +30,49 @@
 
 .qualities .row {
   justify-content: space-evenly;
+}
+
+.index-icon {
+  float: left;
+  min-width: 10px;
+  width: 55px;
+  height: 55px;
+  background: url(../img/sprite-index.svg) no-repeat;
+  background-size: 926%;
+}
+
+.qualities h1 {
+  text-align: center;
+}
+
+.index-icon.payment {
+  background-position: 24.7% 60%;
+}
+.index-icon.security {
+  background-position: 12.7% 60%;
+}
+.index-icon.coverage {
+  background-position: 48.3% 60%;
+}
+.index-icon.legal {
+  background-position: 101% 60%;
+}
+.index-icon.margin {
+  background-position: 73.7% 60%;
+}
+.index-icon.comissions {
+  background-position: 88% 60%;
+}
+.index-icon.cross-platform {
+  background-position: 60.8% 60%;
+}
+.index-icon.reporting {
+  background-position: -0.2% 60%;
+}
+.index-icon.liquidity {
+  background-position: 36.7% 60%;
+}
+
+.q-card {
+  margin: 20px;
 }
