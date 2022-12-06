@@ -1,14 +1,19 @@
+import { Container } from 'react-bootstrap';
 import './styles/Logo.css';
 // import LogoSVG from './img/logo.svg';
 const Logo = () => {
 
   return (
     <div className='logo'>
-      <div className='logo-img' />
-      <div className='text'>
-        <h2>BIT TRADING</h2>
-        <h3>SECURE, CONVINIENT AND FAST</h3>
-        <h3>WAY OF EARNING AND TRADING CRYPTO</h3>
+      <div className='img-container'>
+        <div className='logo-img' />
+      </div>
+      <div className='logo-text'>
+        <div className='text'>
+          <p className="logo-title">BIT TRADING</p>
+          <p className='logo-subtitle'>SECURE, CONVINIENT AND FAST</p>
+          <p className='logo-subtitle'>WAY OF EARNING AND TRADING CRYPTO</p>
+        </div>
       </div>
     </div>
 

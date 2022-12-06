@@ -1,18 +1,57 @@
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  padding-bottom: 15px;
-  margin: 12px 0px;
+@font-face {
+  font-family: "uni-sans";
+  src: local("uni-sans"),
+    url(../fonts/uni-sans-semibold-webfont.woff) format("woff");
 }
 
-.navbar > * {
-  margin-left: 0.5%;
-  font-weight: bolder;
+.navBtn {
+  color: #fff;
+  position: relative;
+  padding: 6px 12px;
+  margin-right: 0;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font: 12px/20px "uni_sans_semiboldregular", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 3px 3px 3px 3px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
 }
 
-.navbar .btn:hover {
-  background-color: #12e1d6;
-  border-color: #12e1d6;
-  color: white;
+@media screen and (min-width: 993px) {
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 18px 0 18px 34px;
+    margin: 12px 0px;
+    width: 100%;
+  }
+
+  .navbar > * {
+    margin-left: 0.5%;
+    font-weight: bolder;
+  }
+
+  .navbar .btn:hover {
+    background-color: #12e1d6;
+    border-color: #12e1d6;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    width: 100%;
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    z-index: 3;
+    border-bottom: none;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 10px 0;
+    justify-content: center;
+  }
 }

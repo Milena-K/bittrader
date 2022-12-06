@@ -5,7 +5,10 @@
 }
 
 .App .center-nav {
-  margin: 0 20%;
+  margin: 0 auto;
+  width: 840px;
+  text-align: center;
+  overflow: hidden;
 }
 
 .App .background-group {
@@ -19,4 +22,39 @@
 
 .App .till-cards {
   background: #182643;
+}
+
+@media (max-width: 992px) {
+  #header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    overflow: visible;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  #header {
+    min-height: 350px !important;
+  }
+  #header .main-logo {
+    display: block;
+  }
+}
+
+#header {
+  width: 100%;
+  background: #1c5d7a url(./img/background-index4.png) no-repeat 50% 100%;
+  background-clip: border-box;
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+#header .heading {
+  padding: 0 20px;
 }

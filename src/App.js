@@ -8,16 +8,19 @@ import GetStarted from './GetStarted';
 import Cards from './Cards';
 import Qualities from './Qualities';
 import Footer from './Footer';
+import { Container, Row } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <div className="background-group">
-        <div className="center-nav">
-          <Navbar />
-          <Logo />
-        </div>
-      </div>
+      <header id="header">
+        <Container>
+          <Row>
+            <Navbar />
+            <Logo />
+          </Row>
+        </Container>
+      </header>
       <div className='till-cards'>
         <Stats />
         <Widget />
@@ -26,7 +29,8 @@ function App() {
       </div>
       <Qualities />
       <Footer />
-    </div>
+    </div >
+
   );
 }
 

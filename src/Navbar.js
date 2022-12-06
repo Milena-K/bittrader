@@ -19,12 +19,12 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <SignInContext.Provider value={contextValue}>
-        <Button size="sm" variant="outline-light" onClick={openModal}>SIGN IN</Button>
+        <Button size="sm" variant="outline-light" onClick={openModal} className="navBtn">SIGN IN</Button>
         <SignIn />
       </SignInContext.Provider>
-      <Button size="sm" variant="outline-light" active>REGISTER</Button>
-      <Button size="sm" variant="outline-light">TRADING</Button>
-      <Button size="sm" variant="outline-light">ABOUT US</Button>
+      <Button size="sm" variant="outline-light" active className="navBtn">REGISTER</Button>
+      <Button size="sm" variant="outline-light" className="navBtn">TRADING</Button>
+      <Button size="sm" variant="outline-light" className="navBtn">ABOUT US</Button>
     </div>
   )
 }

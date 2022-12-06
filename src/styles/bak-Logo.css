@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "uni-sans";
+  src: local("uni-sans"),
+    url(../fonts/uni-sans-semibold-webfont.woff) format("woff");
+}
+
+/* .logo { */
+/*   display: flex; */
+/*   align-items: center; */
+/*   justify-content: flex-start; */
+/*   margin-left: 10%; */
+/*   color: white; */
+/* } */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.logo-img {
+  float: left;
+  min-width: 10px;
+  width: 283px;
+  height: 283px;
+  background-image: url("../img/sprite-index.svg");
+  background-repeat: no-repeat;
+  background-position: 89.8% 108.6%;
+  outline: none;
+}
+
+.logo .text {
+  text-transform: uppercase;
+  color: #fff;
+  font: 62px/60px "uni-sans";
+  z-index: 9;
+  display: block;
+  text-align: left;
+  margin: 0;
+  position: relative;
+  padding: 0;
+}
+
+.logo h2 {
+  font-size: 62px;
+  height: 62px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logo h3 {
+  display: block;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .logo .text {
+    z-index: 9;
+  }
+  .logo .container {
+    z-index: 9;
+    display: block;
+    flex: none;
+  }
+  .logo-img {
+    content: "";
+    z-index: 9;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-size: 290%;
+    margin: 0 auto;
+    min-width: 10px;
+  }
+}
+
+.logo .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .logo .container {
+    width: 750px;
+  }
+  .logo {
+    display: block;
+  }
+}

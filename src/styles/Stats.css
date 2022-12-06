@@ -1,28 +1,50 @@
+@font-face {
+  font-family: "uni-sans";
+  src: local("uni-sans"),
+    url(../fonts/uni-sans-semibold-webfont.woff) format("woff");
+}
 .stats {
   display: flex;
   justify-content: center;
   background-color: #1e3063;
   color: white;
-  padding: 40px;
+  padding: 30px;
 }
 
 .stats > * {
-  border-right: 1px solid #00b3bf;
 }
 
 .stats h2 {
   color: #59d0ff;
-  margin: 0 0 6px;
+  margin: 0 0 2px;
   font-size: 15px;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
 }
 
-.stats h4 {
+.stats span {
   padding: 0 45px;
   letter-spacing: 0;
   display: inline-block;
   vertical-align: top;
   font-size: 28px;
   font-weight: 300;
+}
+
+@media (max-width: 992px) {
+  .stats .col {
+    border-bottom: 1px solid #00b3bf;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .stats .col {
+    border-right: 1px solid #00b3bf;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+  }
 }

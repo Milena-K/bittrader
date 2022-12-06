@@ -1,0 +1,73 @@
+[21:59:56.437] Global cache location '/home/milena/.cache/typescript/4.8', safe file path '/home/milena/Dev/js/bittrading/node_modules/typescript/lib/typingSafeList.json', types map path /home/milena/Dev/js/bittrading/node_modules/typescript/lib/typesMap.json
+[21:59:56.437] Processing cache location '/home/milena/.cache/typescript/4.8'
+[21:59:56.437] Trying to find '/home/milena/.cache/typescript/4.8/package.json'...
+[21:59:56.438] Loaded content of '/home/milena/.cache/typescript/4.8/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.617"},"devDependencies":{"@types/bootstrap":"^5.2.5","@types/object-assign":"^4.0.30","@types/react":"^18.0.21","@types/react-bootstrap":"^0.32.31","@types/uuid":"^8.3.4"}}
+[21:59:56.438] Loaded content of '/home/milena/.cache/typescript/4.8/package-lock.json'
+[21:59:56.444] Adding entry into typings cache: 'bootstrap' => '/home/milena/.cache/typescript/4.8/node_modules/@types/bootstrap/index.d.ts'
+[21:59:56.445] Adding entry into typings cache: 'object-assign' => '/home/milena/.cache/typescript/4.8/node_modules/@types/object-assign/index.d.ts'
+[21:59:56.447] Adding entry into typings cache: 'react' => '/home/milena/.cache/typescript/4.8/node_modules/@types/react/index.d.ts'
+[21:59:56.448] Adding entry into typings cache: 'react-bootstrap' => '/home/milena/.cache/typescript/4.8/node_modules/@types/react-bootstrap/index.d.ts'
+[21:59:56.450] Adding entry into typings cache: 'uuid' => '/home/milena/.cache/typescript/4.8/node_modules/@types/uuid/index.d.ts'
+[21:59:56.450] Finished processing cache location '/home/milena/.cache/typescript/4.8'
+[21:59:56.450] Process id: 36587
+[21:59:56.450] NPM location: /home/milena/.nvm/versions/node/v16.13.2/bin/npm (explicit '--npmLocation' not  provided)
+[21:59:56.450] validateDefaultNpmLocation: false
+[21:59:56.450] Npm config file: /home/milena/.cache/typescript/4.8/package.json
+[21:59:56.450] Updating types-registry npm package...
+[21:59:56.450] Exec: /home/milena/.nvm/versions/node/v16.13.2/bin/npm install --ignore-scripts types-registry@latest
+[22:00:01.785]     Succeeded. stdout:
+    
+    changed 1 package, and audited 11 packages in 717ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[22:00:01.786] Updated types-registry npm package
+[22:00:01.801] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es5.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2016.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.dom.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.scripthost.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/milena/Dev/js/bittrading/src/SignIn.js","/home/milena/Dev/js/bittrading/src/Navbar.js","/home/milena/Dev/js/bittrading/src/Logo.js","/home/milena/Dev/js/bittrading/src/Stats.js","/home/milena/Dev/js/bittrading/src/Widget.js","/home/milena/Dev/js/bittrading/src/GetStarted.js","/home/milena/Dev/js/bittrading/src/Cards.js","/home/milena/Dev/js/bittrading/src/Qualities.js","/home/milena/Dev/js/bittrading/src/Footer.js","/home/milena/Dev/js/bittrading/src/App.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["bootstrap"],"projectRootPath":"/home/milena/Dev/js/bittrading/src","kind":"discover"}
+[22:00:01.807] Loaded safelist from types map file '/home/milena/Dev/js/bittrading/node_modules/typescript/lib/typesMap.json'
+[22:00:01.808] Explicitly included types: []
+[22:00:01.808] Inferred typings from unresolved imports: ["bootstrap"]
+[22:00:01.808] Result: {"cachedTypingPaths":[],"newTypingNames":["bootstrap"],"filesToWatch":["/home/milena/Dev/js/bittrading/src/bower_components","/home/milena/Dev/js/bittrading/src/node_modules"]}
+[22:00:01.808] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["bootstrap"],"filesToWatch":["/home/milena/Dev/js/bittrading/src/bower_components","/home/milena/Dev/js/bittrading/src/node_modules"]}
+[22:00:01.808] DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/bittrading/src/bower_components
+[22:00:01.808] DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/bittrading/src/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[22:00:01.809] Elapsed:: 0.7581620011478662ms DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/bittrading/src/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[22:00:01.809] DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/bittrading/src/node_modules
+[22:00:01.809] DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/bittrading/src/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[22:00:01.809] Elapsed:: 0.04585599899291992ms DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/bittrading/src/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[22:00:01.809] Installing typings ["bootstrap"]
+[22:00:01.810] Npm config file: /home/milena/.cache/typescript/4.8/package.json
+[22:00:01.810] Sending response:
+    {"kind":"event::beginInstallTypes","eventId":1,"typingsInstallerVersion":"4.8.4","projectName":"/dev/null/inferredProject1*"}
+[22:00:01.810] Response has been sent.
+[22:00:01.810] #1 with arguments'["@types/bootstrap@ts4.8"]'.
+[22:00:01.810] Exec: /home/milena/.nvm/versions/node/v16.13.2/bin/npm install --ignore-scripts @types/bootstrap@ts4.8 --save-dev --user-agent="typesInstaller/4.8.4"
+[22:00:07.061]     Succeeded. stdout:
+    
+    changed 1 package, and audited 11 packages in 3s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[22:00:07.061] npm install #1 took: 5251 ms
+[22:00:07.061] Installed typings ["@types/bootstrap@ts4.8"]
+[22:00:07.062] Installed typing files ["/home/milena/.cache/typescript/4.8/node_modules/@types/bootstrap/index.d.ts"]
+[22:00:07.062] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/milena/.cache/typescript/4.8/node_modules/@types/bootstrap/index.d.ts"],"unresolvedImports":["bootstrap"],"kind":"action::set"}
+[22:00:07.062] Response has been sent.
+[22:00:07.062] Sending response:
+    {"kind":"event::endInstallTypes","eventId":1,"projectName":"/dev/null/inferredProject1*","packagesToInstall":["@types/bootstrap@ts4.8"],"installSuccess":true,"typingsInstallerVersion":"4.8.4"}
+[22:00:07.062] Response has been sent.
+[22:00:07.480] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es5.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2016.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.dom.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.scripthost.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/milena/Dev/js/bittrading/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/milena/Dev/js/bittrading/src/SignIn.js","/home/milena/Dev/js/bittrading/src/Navbar.js","/home/milena/Dev/js/bittrading/src/Logo.js","/home/milena/Dev/js/bittrading/src/Stats.js","/home/milena/Dev/js/bittrading/src/Widget.js","/home/milena/Dev/js/bittrading/src/GetStarted.js","/home/milena/Dev/js/bittrading/src/Cards.js","/home/milena/Dev/js/bittrading/src/Qualities.js","/home/milena/Dev/js/bittrading/src/Footer.js","/home/milena/Dev/js/bittrading/src/App.js","/home/milena/.cache/typescript/4.8/node_modules/@types/bootstrap/index.d.ts"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["bootstrap"],"projectRootPath":"/home/milena/Dev/js/bittrading/src","kind":"discover"}
+[22:00:07.480] Explicitly included types: []
+[22:00:07.480] Inferred typings from unresolved imports: ["bootstrap"]
+[22:00:07.481] Result: {"cachedTypingPaths":["/home/milena/.cache/typescript/4.8/node_modules/@types/bootstrap/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/milena/Dev/js/bittrading/src/bower_components","/home/milena/Dev/js/bittrading/src/node_modules"]}
+[22:00:07.481] Finished typings discovery: {"cachedTypingPaths":["/home/milena/.cache/typescript/4.8/node_modules/@types/bootstrap/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/milena/Dev/js/bittrading/src/bower_components","/home/milena/Dev/js/bittrading/src/node_modules"]}
+[22:00:07.481] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/milena/.cache/typescript/4.8/node_modules/@types/bootstrap/index.d.ts"],"unresolvedImports":["bootstrap"],"kind":"action::set"}
+[22:00:07.481] Response has been sent.
+[22:00:07.481] No new typings were requested as a result of typings discovery
