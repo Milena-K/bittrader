@@ -4,14 +4,6 @@
     url(../fonts/uni-sans-semibold-webfont.woff) format("woff");
 }
 
-/* .logo { */
-/*   display: flex; */
-/*   align-items: center; */
-/*   justify-content: flex-start; */
-/*   margin-left: 10%; */
-/*   color: white; */
-/* } */
-
 .logo {
   display: flex;
   align-items: center;

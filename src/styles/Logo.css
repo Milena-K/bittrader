@@ -114,9 +114,3 @@
     padding: 0;
   }
 }
-
-@media (max-width: 576px) {
-  .widget {
-    margin: 5% 0;
-  }
-}

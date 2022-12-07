@@ -15,10 +15,8 @@ function App() {
     <div className="App">
       <header id="header">
         <Container>
-          <Row>
-            <Navbar />
-            <Logo />
-          </Row>
+          <Navbar />
+          <Logo />
         </Container>
       </header>
       <div className='till-cards'>

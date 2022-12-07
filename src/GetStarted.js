@@ -5,7 +5,7 @@ const GetStarted = () => {
 
   return (
     <div className="get-started">
-      <p>Open account for free and start trading Bitcoin now!</p>
+      <p>Open an account for free, start trading Bitcoin now!</p>
       <Button variant="outline-light" size="lg" className="btn-get-started">GET STARTED</Button>
     </div>
   )

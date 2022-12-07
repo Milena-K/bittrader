@@ -3,6 +3,16 @@
   src: local("uni-sans"),
     url(../fonts/uni-sans-semibold-webfont.woff) format("woff");
 }
+@font-face {
+  font-family: "uni-sans-bold";
+  src: local("uni-sans-bold"),
+    url(../fonts/uni-sans-bold-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: "prolight";
+  src: local("prolight"),
+    url(../fonts/sourcesanspro-light-webfont.woff) format("woff");
+}
 .get-started {
   color: white;
   text-align: center;
@@ -19,13 +29,22 @@
   color: #fff;
   margin: auto;
   padding: 10px 90px;
-  font: 20px/24px "source_sans_prolight", Arial, Helvetica, sans-serif;
+  font: 22px/24px "prolight", Arial, Helvetica, sans-serif;
 }
 
 .btn-get-started {
   margin: 20px;
-  padding: 15px 55px;
+  border-radius: 3px !important;
+  font: 2em/26px "uni-sans-bold" !important;
+  text-align: center;
+  padding: 20px 55px;
   border-width: 3px;
+}
+
+.btn-get-started:hover {
+  background: #fff;
+  text-decoration: none;
+  color: #00c2d2 !important;
 }
 
 @media (max-width: 576px) {
