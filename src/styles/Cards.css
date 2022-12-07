@@ -1,8 +1,15 @@
-.cards {
-  margin: 40px;
+@font-face {
+  font-family: "uni-sans-bold";
+  src: local("uni-sans"),
+    url(../fonts/uni-sans-semibold-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: "uni-sans-reg";
+  src: local("uni-sans"),
+    url(../fonts/uni-sans-book-webfont.woff) format("woff");
 }
 .card-img {
-  width: auto;
+  width: fit-content;
   margin-right: 20px;
 }
 
@@ -14,7 +21,20 @@
 }
 
 .card-text {
+  display: inline-block;
   width: auto;
+  font-family: "uni-sans-reg", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
+.card-title {
+  text-align: left;
+  margin: 0 0 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font: 31px/34px "uni-sans-bold", Arial, Helvetica, sans-serif;
 }
 
 .card-body {
@@ -24,6 +44,11 @@
 
 .cards .card {
   margin-top: 20px;
+  margin: 20px;
+}
+
+.cards {
+  margin: 10px;
 }
 
 .buy-bitcoins {
@@ -47,13 +72,35 @@
 }
 
 .card {
+  margin: 10px;
   background: #1c8fbb;
   padding: 15px 5px;
-  margin: 0 0 10px;
   color: #fff;
   overflow: hidden;
   font-size: 18px;
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   border-radius: 0;
+}
+
+@media (min-width: 992px) {
+  .card .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 992px) {
+  .cards .card {
+    margin: 10px;
+  }
+  .card-title {
+    text-align: center;
+  }
+  .card-text {
+    padding: 10px;
+  }
+  .card-img {
+    margin: 0 auto;
+  }
 }

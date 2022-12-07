@@ -14,14 +14,25 @@
   background: #00c2d2;
 }
 
-.get-started h5 {
-  font-size: 25px;
-  font-weight: 300;
+.get-started p {
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  padding: 10px 90px;
+  font: 20px/24px "source_sans_prolight", Arial, Helvetica, sans-serif;
 }
 
 .btn-get-started {
   margin: 20px;
   padding: 15px 55px;
   border-width: 3px;
-  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .btn-get-started {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 15px 55px;
+    border-width: 3px;
+  }
 }
