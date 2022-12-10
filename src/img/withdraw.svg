@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="15px" viewBox="0 0 14 15" version="1.1">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>withdraw</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="withdraw" transform="translate(1.000000, -1.000000)" stroke="#FFFFFF" stroke-width="2">
+            <path d="M5.9353,3.8779 L5.9353,9.9349" id="Stroke-1"/>
+            <polyline id="Stroke-3" points="3.0087 5.3415 5.9357 2.4145 8.8627 5.3415"/>
+            <path d="M0,8.7934 L0,12.8624 C0,13.2344 0.148,13.5904 0.411,13.8534 L0.411,13.8534 C0.673,14.1154 1.029,14.2634 1.401,14.2634 L10.471,14.2634 C10.842,14.2634 11.198,14.1154 11.461,13.8534 L11.461,13.8534 C11.724,13.5904 11.871,13.2344 11.871,12.8624 L11.871,8.7934" id="Stroke-5"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,41 @@
+.modal-title {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 35px;
+}
+
+.modal-dialog {
+  min-width: 600px;
+}
+
+.modal-body p {
+  margin: 10px 0px;
+}
+
+.modal-body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.42857143;
+  background-color: #fff;
+}
+
+.modal-footer {
+  border-top: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.42857143;
+  justify-content: flex-start;
+}
+
+.modal-body .btn {
+  margin-right: 10px;
+}
+.modal-footer a {
+  text-decoration: none;
+}
+
+.validated {
+  color: green;
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="35px" height="35px" viewBox="0 0 35 35" version="1.1">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="CEX-SignUp/SignIn-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="New-email-Sign-Up" sketch:type="MSArtboardGroup" transform="translate(-703.000000, -43.000000)" fill="#04BCC6">
+            <g id="BG" sketch:type="MSLayerGroup">
+                <path d="M720.5,43 L720.5,43 C715.8,43 711.4,44.8 708.1,48.1 C704.8,51.4 703,55.8 703,60.5 C703,65.2 704.8,69.6 708.1,72.9 C711.4,76.2 715.8,78 720.5,78 L720.8,78 L738,78 L738,73.6 L720.5,73.6 C717,73.6 713.7,72.2 711.2,69.8 C708.7,67.3 707.4,64 707.4,60.5 C707.4,57 708.8,53.7 711.2,51.2 C713.7,48.7 717,47.4 720.5,47.4 L720.8,47.4 L738,47.4 L738,43 L720.5,43 L720.5,43 Z M720.5,50.6 L720.1,50.6 C714.8,50.8 710.6,55.1 710.6,60.4 C710.6,65.8 715,70.2 720.4,70.2 L725.8,70.2 L730.2,65.8 L720.5,65.8 C717.5,65.8 715,63.4 715,60.3 C715,57.3 717.4,54.9 720.5,54.9 L720.8,54.9 L730.4,54.9 L726,50.5 L720.5,50.5 L720.5,50.6 Z M734.8,55 L738,55 L738,50.6 L730.4,50.6 L734.8,55 L734.8,55 Z M730.3,70.3 L738,70.3 L738,66 L734.7,66 L730.3,70.3 L730.3,70.3 Z M718.3,60.5 C718.3,61.7 719.3,62.7 720.5,62.7 L733.6,62.7 L735.8,60.5 L733.6,58.3 L720.5,58.3 C719.3,58.3 718.3,59.3 718.3,60.5 L718.3,60.5 Z" id="logo" sketch:type="MSShapeGroup"/>
+            </g>
+        </g>
+    </g>
+</svg>

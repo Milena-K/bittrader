@@ -1,0 +1,17 @@
+.cex-logo {
+  width: 40px;
+  height: 40px;
+  background: url(../img/logo.svg) no-repeat;
+  background-size: contain;
+  margin-left: 16px;
+  display: block;
+  float: left;
+}
+
+.profile {
+  background: white;
+}
+
+.navbar {
+  position: static;
+}

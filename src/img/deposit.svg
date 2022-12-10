@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="15px" viewBox="0 0 14 15" version="1.1">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>deposit</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="deposit" transform="translate(1.000000, 0.000000)" stroke="#FFFFFF" stroke-width="2">
+            <path d="M5.9357,7.0565 L5.9357,0.9995" id="Stroke-1"/>
+            <polyline id="Stroke-3" points="8.8624 5.5929 5.9354 8.5199 3.0084 5.5929"/>
+            <path d="M0,8.3791 L0,12.4481 C0,12.8201 0.148,13.1761 0.411,13.4391 L0.411,13.4391 C0.673,13.7011 1.029,13.8491 1.401,13.8491 L10.471,13.8491 C10.842,13.8491 11.198,13.7011 11.461,13.4391 L11.461,13.4391 C11.724,13.1761 11.871,12.8201 11.871,12.4481 L11.871,8.3791" id="Stroke-4"/>
+        </g>
+    </g>
+</svg>
