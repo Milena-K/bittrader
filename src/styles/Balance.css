@@ -1,0 +1,30 @@
+.icn-BTC:before {
+  content: "\e607";
+}
+
+.balance {
+  background-color: #192743;
+  text-align: center;
+  color: #babbbe;
+}
+
+.balance .container {
+  justify-content: center;
+  align-items: center;
+}
+
+.balance .btn {
+  color: white;
+  margin: 5px;
+}
+
+.balance .coin-ammount {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.balance .btn p {
+  display: inline-block;
+  margin: 0 5px;
+}
