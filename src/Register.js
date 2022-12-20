@@ -4,11 +4,11 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import { RegisterContext } from './Navbar';
+import { ContextRegister } from './ContextRegister';
 
 function Register() {
-  const { openRegister, setOpenRegister } = useContext(RegisterContext);
-  const handleClose = () => { setOpenRegister(false); };
+  const { openRegister, setIsOpenRegister } = useContext(ContextRegister);
+  const handleClose = () => { setIsOpenRegister(false) };
 
   const [validated, setValidated] = useState(false);
 

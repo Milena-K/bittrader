@@ -4,6 +4,10 @@
     url(../fonts/uni-sans-semibold-webfont.woff) format("woff");
 }
 
+.navbar-home {
+  position: static;
+}
+
 .navBtn {
   color: #fff;
   position: relative;
@@ -19,22 +23,22 @@
   -webkit-transition: all 0.2s ease;
 }
 
-@media screen and (min-width: 993px) {
-  .navbar {
+@media (min-width: 993px) {
+  .navbar-home {
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 18px 0 18px 34px;
+    padding: 20px 0px 12px 0px;
     margin: 12px 0px;
     width: 100%;
   }
 
-  .navbar > * {
+  .navbar-home > * {
     margin-left: 0.5%;
     font-weight: bolder;
   }
 
-  .navbar .btn:hover {
+  .navbar-home .btn:hover {
     background-color: #12e1d6;
     border-color: #12e1d6;
     color: white;
@@ -42,7 +46,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .navbar {
+  .navbar-home {
     width: 100%;
     position: absolute;
     bottom: 2px;

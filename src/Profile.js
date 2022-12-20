@@ -13,8 +13,8 @@ import { faToggleOff, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 const Profile = () => {
 
   return (
-    <div class="profile">
-      <Container >
+    <div className="profile">
+      <Container className="profile-navbar">
         <Navbar variant="light">
           <Navbar.Brand href="/">
             <div className='cex-logo' />
@@ -25,7 +25,7 @@ const Profile = () => {
           </Nav>
           <Nav>
             <Nav.Link href="/">
-              <Button variant="dark">EXIT</Button>
+              <Button className="btn-exit-profile" variant="dark">EXIT</Button>
             </Nav.Link>
           </Nav>
         </Navbar >
@@ -43,14 +43,13 @@ const Profile = () => {
           <Row>
             <Form.Group className="mb-3">
               <Form.Label className="title">Request transfer</Form.Label>
-              <Form.Select aria-label="Default select example">
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+              <Form.Select>
+                <option value="btc">Bitcoin (BTC)</option>
+                <option value="eth">Ethereum (ETH)</option>
+                <option value="bch">Bitcoin cash (BCH)</option>
               </Form.Select>
               <br />
-              <Button variant="success" size="sm">Get</Button>
+              <Button className="btn-green" variant="success" size="sm">Get</Button>
             </Form.Group>
           </Row>
 
@@ -63,7 +62,7 @@ const Profile = () => {
                 <br />
                 <br />
 
-                <Button variant="success" size="sm">Save</Button>
+                <Button className="btn-green" variant="success" size="sm">Save</Button>
               </Form.Group>
             </Col>
             <Col>
@@ -78,7 +77,7 @@ const Profile = () => {
                   aria-describedby="basic-addon1"
                 />
                 <br />
-                <Button variant="success" size="sm">Save</Button>
+                <Button className="btn-green" variant="success" size="sm">Save</Button>
               </Form.Group>
             </Col>
           </Row>
@@ -100,6 +99,8 @@ const Profile = () => {
                   type="text"
                   placeholder="Bitcoin cash (BCH)" />
 
+                <br />
+                <Button className="btn-green" variant="success" size="sm">Save</Button>
               </Form.Group>
 
             </Col>
@@ -125,6 +126,8 @@ const Profile = () => {
                     <Form.Control type="password" />
                   </Col>
                 </Row>
+                <br />
+                <Button className="btn-green" variant="success" size="sm">Change password</Button>
               </Form.Group>
             </Col>
           </Row>
@@ -134,85 +137,87 @@ const Profile = () => {
               <FontAwesomeIcon icon={faToggleOff} className="toggle" />
             </Form.Group>
           </Row>
-          <Row >
+          <Row className="last-block">
             <Form.Group>
               <Form.Label className="title">Recent activity</Form.Label>
-              <Table size="md" bordered striped>
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Dec 11, 2022</td>
-                    <td>Withdraw</td>
-                    <td>- 0.51 BTC</td>
-                    <td>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Dec 11, 2022</td>
-                    <td>Withdraw</td>
-                    <td>- 0.51 BTC</td>
-                    <td>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Dec 11, 2022</td>
-                    <td>Withdraw</td>
-                    <td>- 0.51 BTC</td>
-                    <td>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Dec 11, 2022</td>
-                    <td>Withdraw</td>
-                    <td>- 0.51 BTC</td>
-                    <td>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Dec 11, 2022</td>
-                    <td>Withdraw</td>
-                    <td>- 0.51 BTC</td>
-                    <td>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Dec 11, 2022</td>
-                    <td>Withdraw</td>
-                    <td>- 0.51 BTC</td>
-                    <td>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Dec 11, 2022</td>
-                    <td>Withdraw</td>
-                    <td>- 0.51 BTC</td>
-                    <td>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Dec 11, 2022</td>
-                    <td>Withdraw</td>
-                    <td>- 0.51 BTC</td>
-                    <td>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </td>
-                  </tr>
-                </tbody>
-              </Table>
+              <Container className="transactions-table" fluid>
+                <Table size="md" bordered striped responsive>
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Type</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Dec 11, 2022</td>
+                      <td>Withdraw</td>
+                      <td>- 0.51 BTC</td>
+                      <td>
+                        <FontAwesomeIcon icon={faCircleCheck} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Dec 11, 2022</td>
+                      <td>Withdraw</td>
+                      <td>- 0.51 BTC</td>
+                      <td>
+                        <FontAwesomeIcon icon={faCircleCheck} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Dec 11, 2022</td>
+                      <td>Withdraw</td>
+                      <td>- 0.51 BTC</td>
+                      <td>
+                        <FontAwesomeIcon icon={faCircleCheck} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Dec 11, 2022</td>
+                      <td>Withdraw</td>
+                      <td>- 0.51 BTC</td>
+                      <td>
+                        <FontAwesomeIcon icon={faCircleCheck} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Dec 11, 2022</td>
+                      <td>Withdraw</td>
+                      <td>- 0.51 BTC</td>
+                      <td>
+                        <FontAwesomeIcon icon={faCircleCheck} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Dec 11, 2022</td>
+                      <td>Withdraw</td>
+                      <td>- 0.51 BTC</td>
+                      <td>
+                        <FontAwesomeIcon icon={faCircleCheck} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Dec 11, 2022</td>
+                      <td>Withdraw</td>
+                      <td>- 0.51 BTC</td>
+                      <td>
+                        <FontAwesomeIcon icon={faCircleCheck} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Dec 11, 2022</td>
+                      <td>Withdraw</td>
+                      <td>- 0.51 BTC</td>
+                      <td>
+                        <FontAwesomeIcon icon={faCircleCheck} />
+                      </td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </Container>
 
             </Form.Group>
 
@@ -221,7 +226,7 @@ const Profile = () => {
         </Form>
       </Container>
       <Footer />
-    </div>
+    </div >
   )
 }
 

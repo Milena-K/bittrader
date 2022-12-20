@@ -39,20 +39,20 @@ const Footer = () => {
             <Col>
               <Row> <p className="footer-title">PARTNERS</p></Row>
               <Row>
-                <a href='#'>Binance</a>
+                <a href='#'>DigitalCoinsHub</a>
               </Row>
               <Row>
-                <a href='#'>Icobench</a>
+                <a href='#'>BitCoinsPlus</a>
               </Row>
               <Row>
-                <a href='#'>Cointelegraph</a>
+                <a href='#'>CoinsTradeCentral</a>
               </Row>
             </Col>
           </Row>
         </Container>
       </div>
       <div className="copyright">
-        <p>&copy; 2014-2022 Bit Trading LTD Trademarks belong to their respective owners. All rights reserved | Server time: <span className="server-time"> Monday, November 7, 2022, 11:34 pm </span></p>
+        <p>&copy; 2014-2022 Bit Trading LTD Trademarks belong to their respective owners. Be advised, simulation website. | Server time: 04/09/2020 06:23:47 pm 10:43:54</p>
       </div>
     </div>
   )

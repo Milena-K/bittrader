@@ -1,21 +1,20 @@
+font-face {
+  font-family: "uni-sans";
+  src: local("uni-sans"),
+    url(../fonts/uni-sans-semibold-webfont.woff) format("woff");
+}
+
 .cex-logo {
   width: 40px;
   height: 40px;
   background: url(../img/logo.svg) no-repeat;
   background-size: contain;
-  margin-left: 16px;
   display: block;
   float: left;
 }
 
 .profile {
   background: white;
-}
-
-.navbar {
-  position: static;
-  margin: 0;
-  padding: 5px 10px;
 }
 
 .title {
@@ -50,4 +49,45 @@
 .profile-navbar {
   align-items: center;
   justify-content: center;
+  max-width: 1170px;
+}
+.btn-green {
+  background: #71c266;
+  color: #fff;
+  font-family: Open sans, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.25s;
+  border-color: transparent;
+}
+
+.btn-exit-profile {
+}
+
+.profile .form {
+  max-width: 1170px;
+}
+
+.profile-navbar a:hover {
+  color: #00c2dc;
+  text-decoration: none;
+}
+
+.profile-navbar a {
+  color: #657483;
+  font: 16px/41px "uni-sans", Arial, Helvetica, sans-serif;
+  float: left;
+  padding: 0 8px;
+  margin-left: 10px;
+}
+
+.transactions-table {
+  max-height: 298px;
+  overflow-y: auto;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.last-block {
+  margin-bottom: 12%;
 }

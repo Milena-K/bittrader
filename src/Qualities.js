@@ -21,7 +21,7 @@ const Qualities = () => {
           <div className='q-card'>
             <Row sm={1} md={1} xl={4}>
               <Col lg={1} xl={4} className="icon">
-                <div class="index-icon payment" />
+                <div className="index-icon payment" />
               </Col>
               <Col lg={9} xl={8}>
                 <div className='q-body'>
@@ -34,7 +34,7 @@ const Qualities = () => {
           <div className='q-card'>
             <Row sm={1} md={1} xl={4}>
               <Col lg={1} xl={4} className="icon">
-                <div class="index-icon security" />
+                <div className="index-icon security" />
               </Col>
               <Col lg={9} xl={8}>
                 <div className='q-body'>
@@ -47,7 +47,7 @@ const Qualities = () => {
           <div className='q-card'>
             <Row sm={1} md={1} xl={4}>
               <Col lg={1} xl={4} className="icon">
-                <div class="index-icon coverage" />
+                <div className="index-icon coverage" />
               </Col>
               <Col lg={9} xl={8}>
                 <div className='q-body'>
@@ -62,7 +62,7 @@ const Qualities = () => {
           <div className='q-card'>
             <Row sm={1} md={1} xl={4}>
               <Col lg={1} xl={4} className="icon">
-                <div class="index-icon legal" />
+                <div className="index-icon legal" />
               </Col>
               <Col lg={9} xl={8}>
                 <div className='q-body'>
@@ -75,7 +75,7 @@ const Qualities = () => {
           <div className='q-card'>
             <Row sm={1} md={1} xl={4}>
               <Col lg={1} xl={4} className="icon">
-                <div class="index-icon margin" />
+                <div className="index-icon margin" />
               </Col>
               <Col lg={9} xl={8}>
                 <div className='q-body'>
@@ -88,7 +88,7 @@ const Qualities = () => {
           <div className='q-card'>
             <Row sm={1} md={1} xl={4}>
               <Col lg={1} xl={4} className="icon">
-                <div class="index-icon commissions" />
+                <div className="index-icon commissions" />
               </Col>
               <Col lg={9} xl={8}>
                 <div className='q-body'>
@@ -103,7 +103,7 @@ const Qualities = () => {
           <div className='q-card'>
             <Row sm={1} md={1} xl={4}>
               <Col lg={1} xl={4} className="icon">
-                <div class="index-icon cross-platform" />
+                <div className="index-icon cross-platform" />
               </Col>
               <Col lg={9} xl={8}>
                 <div className='q-body'>
@@ -116,7 +116,7 @@ const Qualities = () => {
           <div className='q-card'>
             <Row sm={1} md={1} xl={4}>
               <Col lg={1} xl={4} className="icon">
-                <div class="index-icon reporting" />
+                <div className="index-icon reporting" />
               </Col>
               <Col lg={9} xl={8}>
                 <div className='q-body'>
@@ -129,7 +129,7 @@ const Qualities = () => {
           <div className='q-card'>
             <Row sm={1} md={1} xl={4}>
               <Col lg={1} xl={4} className="icon">
-                <div class="index-icon liquidity" />
+                <div className="index-icon liquidity" />
               </Col>
               <Col lg={9} xl={8}>
                 <div className='q-body'>

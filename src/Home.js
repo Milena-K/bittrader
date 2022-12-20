@@ -9,24 +9,27 @@ import Cards from './Cards';
 import Qualities from './Qualities';
 import Footer from './Footer';
 import { Container, Row } from 'react-bootstrap';
+import ContextRegisterProvider from './ContextRegister';
 
 function Home() {
   return (
     <div className="Home">
-      <header id="header">
-        <Container>
-          <Navbar />
-          <Logo />
-        </Container>
-      </header>
-      <div className='till-cards'>
-        <Stats />
-        <Widget />
-        <GetStarted />
-        <Cards />
-      </div>
-      <Qualities />
-      <Footer />
+      <ContextRegisterProvider>
+        <header id="header">
+          <Container>
+            <Navbar />
+            <Logo />
+          </Container>
+        </header>
+        <div className='till-cards'>
+          <Stats />
+          <Widget />
+          <GetStarted />
+          <Cards />
+        </div>
+        <Qualities />
+        <Footer />
+      </ContextRegisterProvider>
     </div >
 
   );
