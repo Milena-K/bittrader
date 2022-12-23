@@ -45,6 +45,10 @@
   transition: 0.25s;
 }
 
+.btn-green {
+  background-color: #71c266;
+}
+
 .container-balance {
   max-width: 1170px;
 }

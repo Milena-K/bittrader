@@ -4,8 +4,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBitcoinSign } from '@fortawesome/free-solid-svg-icons';
 import { faDollarSign, faArrowRightToBracket, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { faEthereum } from '@fortawesome/free-brands-svg-icons';
+import { useMemo, createContext, useState } from 'react';
+import DepositModal from './DepositModal';
+import WithdrawModal from './WithdrawModal';
+
+export const DepositContext = createContext();
+export const WithdrawContext = createContext();
 
 const Balance = () => {
+  const [isOpenDeposit, setIsOpenDeposit] = useState(false);
+  const [isOpenWithdraw, setIsOpenWithdraw] = useState(false);
+
+  const openDepositModal = () => { setIsOpenDeposit(true) }
+  const openWithdrawModal = () => { setIsOpenWithdraw(true) }
+
+  const depositValue = useMemo(() => ({
+    isOpenDeposit, setIsOpenDeposit
+  }), [isOpenDeposit, setIsOpenDeposit]);
+  const withdrawValue = useMemo(() => ({
+    isOpenWithdraw, setIsOpenWithdraw
+  }), [isOpenWithdraw, setIsOpenWithdraw]);
+
+
   return (
     <div className="balance">
       <Container className="container-balance">
@@ -16,22 +36,29 @@ const Balance = () => {
             <FontAwesomeIcon icon={faEthereum} />
             <p className='coin-ammount'>3.44862</p>
             {/* TODO: make it a BCH sign */}
+            <FontAwesomeIcon icon={faBitcoinSign} />
             <FontAwesomeIcon icon={faDollarSign} />
             <p className='coin-ammount'>0</p>
           </Col>
           <Col className='balance-btns'>
-            <Button className="btn-green" variant="success">
-              <p>DEPOSIT</p>
-              <FontAwesomeIcon icon={faArrowRightToBracket} className="fa-rotate-90" />
-            </Button>
-            <Button className="btn-blue">
-              <p>WITHDRAW</p>
-              <FontAwesomeIcon icon={faArrowRightFromBracket} className="fa-rotate-270" />
-            </Button>
+            <DepositContext.Provider value={depositValue}>
+              <Button className="btn-green" onClick={openDepositModal} variant="success">
+                <p>DEPOSIT</p>
+                <FontAwesomeIcon icon={faArrowRightToBracket} className="fa-rotate-90" />
+              </Button>
+              <DepositModal />
+            </DepositContext.Provider>
+            <WithdrawContext.Provider value={withdrawValue}>
+              <Button onClick={openWithdrawModal} className="btn-blue">
+                <p>WITHDRAW</p>
+                <FontAwesomeIcon icon={faArrowRightFromBracket} className="fa-rotate-270" />
+              </Button>
+              <WithdrawModal />
+            </WithdrawContext.Provider >
           </Col>
         </Row>
       </Container>
-    </div>
+    </div >
   )
 }
 

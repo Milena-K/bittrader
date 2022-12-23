@@ -4,7 +4,6 @@ import { useState, useMemo, createContext, useContext } from 'react';
 import SignIn from './SignIn';
 import Register from './Register';
 import { LinkContainer } from 'react-router-bootstrap';
-import ContextRegisterProvider from './ContextRegister';
 import { ContextRegister } from './ContextRegister';
 
 export const SignInContext = createContext();
@@ -14,12 +13,17 @@ const Navbar = () => {
   const { openRegister, setIsOpenRegister } = useContext(ContextRegister);
 
   const openSignInModal = () => { setOpenSignIn(true) }
+  const openRegisterModal = () => { setIsOpenRegister(true) }
 
   const contextValueSignIn = useMemo(() => ({
     openSignIn,
     setOpenSignIn,
   }), [openSignIn, setOpenSignIn]);
 
+  const contextValueRegister = useMemo(() => ({
+    openRegister,
+    setIsOpenRegister,
+  }), [openSignIn, setOpenSignIn]);
 
   return (
     <div className='navbar-home'>
@@ -27,10 +31,10 @@ const Navbar = () => {
         <Button size="sm" variant="outline-light" onClick={openSignInModal} className="navBtn">SIGN IN</Button>
         <SignIn />
       </SignInContext.Provider>
-      <ContextRegisterProvider>
-        <Button size="sm" variant="outline-light" onClick={() => setIsOpenRegister(true)} active className="navBtn">REGISTER</Button>
+      <ContextRegister.Provider value={contextValueRegister}>
+        <Button size="sm" variant="outline-light" onClick={openRegisterModal} active className="navBtn">REGISTER</Button>
         <Register />
-      </ContextRegisterProvider>
+      </ContextRegister.Provider>
       <Button size="sm" variant="outline-light" className="navBtn">TRADING</Button>
       <Button size="sm" variant="outline-light" className="navBtn">ABOUT US</Button>
       <LinkContainer to='/profile'>

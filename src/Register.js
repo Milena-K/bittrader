@@ -8,7 +8,10 @@ import { ContextRegister } from './ContextRegister';
 
 function Register() {
   const { openRegister, setIsOpenRegister } = useContext(ContextRegister);
-  const handleClose = () => { setIsOpenRegister(false) };
+  const handleClose = () => {
+    console.log('register closed.')
+    setIsOpenRegister(false)
+  };
 
   const [validated, setValidated] = useState(false);
 
@@ -70,7 +73,7 @@ function Register() {
           </Form>
         </Modal.Body>
         <Modal.Footer >
-          <p>Already have an account? <a href='#'>Log in here.</a></p>
+          {/* <p>Already have an account? <a href='#'>Log in here.</a></p> */}
         </Modal.Footer >
       </Modal>
     </>

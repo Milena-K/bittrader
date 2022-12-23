@@ -6,6 +6,7 @@ import {
 import './styles/Profile.css';
 import Footer from './Footer';
 import Balance from './Balance';
+import ProfileNav from './ProfileNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faToggleOff, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,23 +15,7 @@ const Profile = () => {
 
   return (
     <div className="profile">
-      <Container className="profile-navbar">
-        <Navbar variant="light">
-          <Navbar.Brand href="/">
-            <div className='cex-logo' />
-          </Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/trading">TRADING</Nav.Link>
-            <Nav.Link href="/about-us">ABOUT US</Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href="/">
-              <Button className="btn-exit-profile" variant="dark">EXIT</Button>
-            </Nav.Link>
-          </Nav>
-        </Navbar >
-      </Container>
-
+      <ProfileNav />
       <Balance />
 
       <Container className="form">

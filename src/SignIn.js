@@ -5,12 +5,23 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { SignInContext } from './Navbar';
+import { ContextRegister } from './ContextRegister';
 
 function SignIn() {
   const { openSignIn, setOpenSignIn } = useContext(SignInContext);
-  const handleClose = () => { setOpenSignIn(false); };
+  const { openRegister, setIsOpenRegister } = useContext(ContextRegister);
 
   const [validated, setValidated] = useState(false);
+
+  const handleClose = () => {
+    console.log('sign in closed.')
+    setOpenSignIn(false)
+  };
+  const handleSignIn = () => {
+    handleClose();
+    setIsOpenRegister(true);
+  }
+
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -69,8 +80,6 @@ function SignIn() {
           </Form>
         </Modal.Body>
         <Modal.Footer >
-          <p>Don't have an account? <a href='#'>Sign up now.</a></p>
-          <p>Forgot Password or Two-Factor Device? <a href='#'>Request Password Reset.</a></p>
         </Modal.Footer >
       </Modal>
     </>
