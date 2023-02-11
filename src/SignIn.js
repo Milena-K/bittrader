@@ -1,36 +1,73 @@
 import './styles/SignIn.css';
-import React, { useState, useContext } from 'react';
+import React, { useRef, useState, useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import { SignInContext } from './Navbar';
+import { SignInContext } from './SignInContext';
 import { ContextRegister } from './ContextRegister';
+import { signInWithEmailAndPassword } from "firebase/auth";
+import {auth, db} from './firebaseConfig';
+import {useNavigate} from "react-router";
+import {getSession, startSession} from "./session";
+import {useAuthValue} from "./AuthContext";
 
 function SignIn() {
+  const navigate = useNavigate();
   const { openSignIn, setOpenSignIn } = useContext(SignInContext);
   const { openRegister, setIsOpenRegister } = useContext(ContextRegister);
-
+  const { currentUser, setCurrentUser } = useAuthValue();
   const [validated, setValidated] = useState(false);
+  const [error, setError] = useState({});
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
 
   const handleClose = () => {
-    console.log('sign in closed.')
+    setError({});
     setOpenSignIn(false)
   };
-  const handleSignIn = () => {
-    handleClose();
-    setIsOpenRegister(true);
-  }
 
+  const formatError = (error) => {
+    console.log(error);
+    switch (error.code) {
+      case 'auth/user-not-found':
+        error.message = "Invalid username or email";
+        break;
+      case 'auth/wrong-password':
+        error.message = "Wrong password";
+        break;
+      case 'auth/invalid-email':
+        error.message = "Invalid username or email";
+        break;
+      case 'auth/network-request-failed':
+        error = {};
+        break;
+    }
+    return error;
+  }
 
   const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-      setValidated(true);
-    }
+    event.preventDefault();
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        startSession(user).then(r => {
+          const session = getSession();
+          setCurrentUser(session.user);
+          setValidated(true);
+          navigate("/profile");
+          handleClose()
+        })
+      })
+      .catch((error) => {
+        error = formatError(error);
+        setError(error);
+      });
   }
+
+
 
   return (
     <>
@@ -45,9 +82,14 @@ function SignIn() {
                 <Form.Control
                   type="text"
                   required
+                  isInvalid={error.code}
+                  ref={emailRef}
                 />
                 <Form.Control.Feedback type="invalid">
-                  Incorrect username or email.
+                  {/*{error.message}*/}
+                </Form.Control.Feedback>
+                <Form.Control.Feedback type="valid">
+                  Logged in.
                 </Form.Control.Feedback>
                 <Form.Control.Feedback />
               </InputGroup>
@@ -59,6 +101,7 @@ function SignIn() {
                 <Form.Control
                   type="password"
                   required
+                  ref={passwordRef}
                 />
                 <Form.Control.Feedback type="invalid">
                   Incorrect password.
@@ -74,9 +117,6 @@ function SignIn() {
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-
-            <p className="validated">Logged in.</p>
-
           </Form>
         </Modal.Body>
         <Modal.Footer >

@@ -12,40 +12,40 @@ const Footer = () => {
             <Col>
               <Row> <p className="footer-title">SERVICES</p></Row>
               <Row>
-                <a href='#'>Bitcoin Trading</a>
+                <a href='/trading'>Bitcoin Trading</a>
               </Row>
               <Row>
-                <a href='#'>Profile</a>
+                <a href='/'>Profile</a>
               </Row>
             </Col>
             <Col>
               <Row> <p className="footer-title">INFORMATION</p></Row>
               <Row>
-                <a href='#'>Wallet</a>
+                <a href='/'>Wallet</a>
               </Row>
               <Row>
-                <a href='#'>Getting Started</a>
+                <a href='/'>Getting Started</a>
               </Row>
             </Col>
             <Col>
               <Row> <p className="footer-title">ABOUT</p></Row>
               <Row>
-                <a href='#'>About Us</a>
+                <a href='/about-us'>About Us</a>
               </Row>
               <Row>
-                <a href='#'>Terms of Use</a>
+                <a href='/'>Terms of Use</a>
               </Row>
             </Col>
             <Col>
               <Row> <p className="footer-title">PARTNERS</p></Row>
               <Row>
-                <a href='#'>DigitalCoinsHub</a>
+                <a href='/'>DigitalCoinsHub</a>
               </Row>
               <Row>
-                <a href='#'>BitCoinsPlus</a>
+                <a href='/'>BitCoinsPlus</a>
               </Row>
               <Row>
-                <a href='#'>CoinsTradeCentral</a>
+                <a href='/'>CoinsTradeCentral</a>
               </Row>
             </Col>
           </Row>

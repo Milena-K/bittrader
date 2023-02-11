@@ -10,11 +10,12 @@ import Qualities from './Qualities';
 import Footer from './Footer';
 import { Container, Row } from 'react-bootstrap';
 import ContextRegisterProvider from './ContextRegister';
+import {useMemo, useState} from "react";
 
 function Home() {
+
   return (
     <div className="Home">
-      <ContextRegisterProvider>
         <header id="header">
           <Container>
             <Navbar />
@@ -29,7 +30,6 @@ function Home() {
         </div>
         <Qualities />
         <Footer />
-      </ContextRegisterProvider>
     </div >
 
   );

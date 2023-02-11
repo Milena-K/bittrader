@@ -17,6 +17,7 @@
   font-style: normal;
   line-height: 20px;
   position: relative;
+  color: white;
   margin: 0 0 5px;
   text-transform: uppercase;
 }
@@ -39,7 +40,6 @@
 .q-card {
   color: #fff;
   letter-spacing: 1px;
-  font: 16px/20px "uni_sans_bookregular", Arial, Helvetica, sans-serif;
   text-align: left;
 }
 
@@ -71,6 +71,10 @@
   height: fit-content;
 }
 
+.q-body:nth-child(1) {
+ font-weight: normal !important;
+  font-size: 15px;
+}
 .qualities h1 {
   color: #fff;
   text-align: center;

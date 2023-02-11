@@ -46,10 +46,12 @@ font-face {
   font-weight: 100;
 }
 
-.profile-navbar {
+.profile-navbar.logged-in {
   align-items: center;
   justify-content: center;
   max-width: 1170px;
+  border-bottom: none;
+  margin: auto;
 }
 .btn-green {
   background: #71c266;
@@ -71,6 +73,10 @@ font-face {
 .profile-navbar a:hover {
   color: #00c2dc;
   text-decoration: none;
+}
+.profile-navbar{
+  border-bottom: 1px solid rgba(101, 116, 131, 0.1);
+  margin: 0;
 }
 
 .profile-navbar a {

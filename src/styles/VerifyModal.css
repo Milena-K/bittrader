@@ -1,0 +1,47 @@
+/*@font-face {*/
+/*    font-family: "uni-sans-reg";*/
+/*    src: local("uni-sans-reg"),*/
+/*    url(../fonts/uni-sans-semibold-webfont.woff) format("woff");*/
+/*}*/
+
+.verify.modal-header {
+    border-bottom: none;
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #657483;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-weight: 600;*/
+}
+.verify .modal-body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #657483;
+    /*font-weight: 600;*/
+}
+
+
+.verify .qr_div {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 5px;
+}
+
+.verify .qr_div .bottom-text {
+    margin: 0px;
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+.verify .codeQR {
+    width: 100px;
+    height: 100px;
+}
+
+.verify .modal-footer {
+    border-top: 1px solid rgba(101, 116, 131, 0.3);
+    display: flex;
+    justify-content: end;
+}
+
