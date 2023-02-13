@@ -2,7 +2,7 @@ import {initializeApp} from "firebase/app";
 import {getAuth, createUserWithEmailAndPassword, signOut,} from "firebase/auth";
 import {query, getDoc, where, getFirestore, doc, setDoc, collection} from 'firebase/firestore';
 import {getDatabase, set, ref} from 'firebase/database';
-import jsonFile from './convertcsv.json';
+
 
 export const firebaseConfig = {
     apiKey: "AIzaSyBoPmENYeoqHtt3Rnibs6rCyheZ1c4h8nw",
