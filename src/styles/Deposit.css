@@ -1,0 +1,82 @@
+.deposit .modal-title {
+  font-size: 18px;
+  padding: 0;
+}
+
+.deposit .modal-header {
+  justify-content: center;
+  align-items: center;
+}
+
+.deposit .modal-footer {
+  justify-content: flex-end;
+  border-top: 1px solid rgba(101, 116, 131, 0.3);
+}
+
+.deposit .modal-body {
+  padding: 20px 40px;
+  font-size: 16px;
+  color: #657483;
+  font-weight: 400;
+}
+
+.deposit .pay {
+  background-color: #71c266;
+  border: none;
+}
+
+.deposit .close {
+  background: #5793d1;
+  border: none;
+}
+
+.get .title {
+  text-align: center;
+}
+.get .form-label {
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.confirm-footer {
+  border-top: none !important;
+  display: flex;
+  justify-content: flex-start !important;
+}
+.confirm .modal-header {
+  border: none;
+}
+
+.addr .form-control {
+  background-color: rgba(101, 116, 131, 0.2);
+  text-align: center;
+  border-radius: 25px;
+  border: none;
+}
+
+.confirm .modal-body {
+  padding: 0;
+  margin: 0 25px;
+}
+
+.confirm-footer p {
+  width: 440px;
+  text-align: left;
+}
+
+@media (max-width: 615px) {
+  .modal-dialog {
+    min-width: 400px;
+  }
+  .confirm-footer {
+    justify-content: center !important;
+  }
+}
+
+.addr {
+  text-align: center;
+}
+
+.addr .subtitle {
+  font-size: 16px;
+}
