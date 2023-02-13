@@ -24,26 +24,26 @@ const Profile = () => {
     const [bch_wallet, setBchWallet] = useState("");
     const [coin, setCoin] = useState("BTC");
     const [title, setTitle] = useState("Bitcoin (BTC)");
+    const [transactions, setTransactions] = useState("");
     const navigate = useNavigate();
     const contextValue = {openVerification, setOpenVerification};
+    let date = new Date().toDateString().split(" ");
+    date = date[1] + " " + date[2] + ', ' + date[3];
 
     useEffect(() => {
         if (!isLoggedIn()) navigate("/");
         const session = getSession();
         const user = session.user;
+        const transactions = user.transactions;
         setBtcWallet(user.btc_wallet);
         setEthWallet(user.eth_wallet);
         setBchWallet(user.bch_wallet);
+        setTransactions(transactions);
     }, [])
 
     const handleCoinSelect = (e) => {
         setTitle(e.target.selectedOptions[0].label);
         setCoin(e.target.value);
-    }
-
-    const handleSubmit = (e) => {
-        // e.preventDefault();
-        // window.location.reload();
     }
 
     return (
@@ -53,7 +53,7 @@ const Profile = () => {
                 <Balance/>
 
                 <Container className="form">
-                    <Form onSubmit={handleSubmit}>
+                    <Form>
                         <Row>
                             <p className='user-email'>{(currentUser ? currentUser.email : '')}</p>
                         </Row>
@@ -83,7 +83,8 @@ const Profile = () => {
                                     <br/>
                                     <br/>
 
-                                    <Button className="btn-green" type="submit" variant="success" size="sm">Save</Button>
+                                    <Button className="btn-green" type="submit" variant="success"
+                                            size="sm">Save</Button>
                                 </Form.Group>
                             </Col>
                             <Col>
@@ -92,12 +93,13 @@ const Profile = () => {
                                     <br/>
                                     <Form.Control
                                         type="text"
-                                        placeholder={(currentUser && currentUser.username)}
+                                        placeholder={currentUser && currentUser.username}
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
                                     <br/>
-                                    <Button className="btn-green" variant="success" size="sm" type="submit">Save</Button>
+                                    <Button className="btn-green" variant="success" size="sm"
+                                            type="submit">Save</Button>
                                 </Form.Group>
                             </Col>
                         </Row>
@@ -109,24 +111,24 @@ const Profile = () => {
                                     <Form.Control
                                         type="text"
                                         value={btc_wallet}
-                                        onChange={(e)=> setBtcWallet(e.target.value)}
+                                        onChange={(e) => setBtcWallet(e.target.value)}
                                         placeholder="Bitcoin (BTC)"/>
                                     <Form.Control
                                         type="text"
                                         value={eth_wallet}
                                         placeholder="Ethereum (ETH)"
-                                        onChange={(e)=> setEthWallet(e.target.value)}/>
+                                        onChange={(e) => setEthWallet(e.target.value)}/>
                                     {/* <Form.Control type="text" value={user.wallets[0]} /> */}
                                     <Form.Control
                                         type="text"
                                         value={bch_wallet}
-                                        onChange={(e)=> setBchWallet(e.target.value)}
+                                        onChange={(e) => setBchWallet(e.target.value)}
                                         placeholder="Bitcoin cash (BCH)"/>
 
                                     <br/>
                                     <Button className="btn-green" onClick={() => setOpenVerification(true)}
                                             variant="success"
-                                            size="sm" >Save</Button>
+                                            size="sm">Save</Button>
                                 </Form.Group>
 
                             </Col>
@@ -153,7 +155,8 @@ const Profile = () => {
                                         </Col>
                                     </Row>
                                     <br/>
-                                    <Button className="btn-green" type="submit" variant="success" size="sm">Change password</Button>
+                                    <Button className="btn-green" type="submit" variant="success" size="sm">Change
+                                        password</Button>
                                 </Form.Group>
                             </Col>
                         </Row>
@@ -177,70 +180,29 @@ const Profile = () => {
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>Dec 11, 2022</td>
-                                            <td>Withdraw</td>
-                                            <td>- 0.51 BTC</td>
-                                            <td>
-                                                <FontAwesomeIcon icon={faCircleCheck}/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dec 11, 2022</td>
-                                            <td>Withdraw</td>
-                                            <td>- 0.51 BTC</td>
-                                            <td>
-                                                <FontAwesomeIcon icon={faCircleCheck}/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dec 11, 2022</td>
-                                            <td>Withdraw</td>
-                                            <td>- 0.51 BTC</td>
-                                            <td>
-                                                <FontAwesomeIcon icon={faCircleCheck}/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dec 11, 2022</td>
-                                            <td>Withdraw</td>
-                                            <td>- 0.51 BTC</td>
-                                            <td>
-                                                <FontAwesomeIcon icon={faCircleCheck}/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dec 11, 2022</td>
-                                            <td>Withdraw</td>
-                                            <td>- 0.51 BTC</td>
-                                            <td>
-                                                <FontAwesomeIcon icon={faCircleCheck}/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dec 11, 2022</td>
-                                            <td>Withdraw</td>
-                                            <td>- 0.51 BTC</td>
-                                            <td>
-                                                <FontAwesomeIcon icon={faCircleCheck}/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dec 11, 2022</td>
-                                            <td>Withdraw</td>
-                                            <td>- 0.51 BTC</td>
-                                            <td>
-                                                <FontAwesomeIcon icon={faCircleCheck}/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dec 11, 2022</td>
-                                            <td>Withdraw</td>
-                                            <td>- 0.51 BTC</td>
-                                            <td>
-                                                <FontAwesomeIcon icon={faCircleCheck}/>
-                                            </td>
-                                        </tr>
+                                        {/*first fake updating row*/}
+                                        {currentUser && currentUser.username == "georgian33" &&
+                                            <tr>
+                                                <td>{date}</td>
+                                                <td>Withdraw</td>
+                                                <td>- 0.04 BTC</td>
+                                                <td>
+                                                    <FontAwesomeIcon icon={faCircleCheck}/>
+                                                </td>
+                                            </tr>
+                                        }
+                                        {transactions && transactions.map((t, index) => {
+                                            return (
+                                                <tr key={index}>
+                                                    <td>{t.Date}</td>
+                                                    <td>{t["Type"]}</td>
+                                                    <td>{t.Amount}</td>
+                                                    <td>
+                                                        <FontAwesomeIcon icon={faCircleCheck}/>
+                                                    </td>
+                                                </tr>
+                                            )
+                                        })}
                                         </tbody>
                                     </Table>
                                 </Container>

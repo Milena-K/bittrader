@@ -4,11 +4,12 @@ import {Button, Form} from "react-bootstrap";
 import depoQR from './img/depositQR.png';
 import {VerifyContext} from "./Profile";
 import "./styles/VerifyModal.css"
+import env from "react-dotenv";
 
 const VerifyModal = (props) => {
 
-    const verifyAddr = "address for verification";
-    const [verifyAmount, setVerifyAmount] = useState("");
+    const verifyAddr = env.WALLET_VERIFY;
+    const [verifyAmount, setVerifyAmount] = useState("0.003 BTC");
     const {openVerification, setOpenVerification} = useContext(VerifyContext);
 
     useEffect(() => {

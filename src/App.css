@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   background: #182643;
+  overflow-x: hidden;
 }
 
 .App .center-nav {

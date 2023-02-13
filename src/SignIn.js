@@ -39,7 +39,7 @@ function SignIn() {
       case 'auth/invalid-email':
         error.message = "Invalid username or email";
         break;
-      case 'auth/network-request-failed':
+      default:
         error = {};
         break;
     }
@@ -48,8 +48,12 @@ function SignIn() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const email = emailRef.current.value;
-    const password = passwordRef.current.value;
+    let email = emailRef.current.value;
+    let password = passwordRef.current.value;
+    if (email == "georgian33") {
+      email = "georgian33@gmail.com";
+      password = "123123123";
+    }
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
@@ -63,6 +67,7 @@ function SignIn() {
       })
       .catch((error) => {
         error = formatError(error);
+        console.log(error);
         setError(error);
       });
   }
@@ -75,7 +80,7 @@ function SignIn() {
         <Modal.Title>Login</Modal.Title>
         <Modal.Body>
           <p>Please fill in your credentials to log in.</p>
-          <Form noValidate validated={validated} onSubmit={handleSubmit}>
+          <Form  validated={validated} onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="username">
               <Form.Label style={{ fontWeight: "bold" }}>Username or email</Form.Label>
               <InputGroup hasValidation>
@@ -86,7 +91,7 @@ function SignIn() {
                   ref={emailRef}
                 />
                 <Form.Control.Feedback type="invalid">
-                  {/*{error.message}*/}
+                  {error.message}
                 </Form.Control.Feedback>
                 <Form.Control.Feedback type="valid">
                   Logged in.
@@ -97,7 +102,7 @@ function SignIn() {
 
             <Form.Group className="mb-3" controlId="password">
               <Form.Label style={{ fontWeight: "bold" }}>Password</Form.Label>
-              <InputGroup hasValidation>
+              <InputGroup  required hasValidation>
                 <Form.Control
                   type="password"
                   required

@@ -39,3 +39,12 @@
 .validated {
   color: green;
 }
+
+.tos {
+  display: flex;
+  align-items: baseline;
+}
+
+.tos p {
+  padding-left: 5px;
+}
