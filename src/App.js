@@ -15,6 +15,7 @@ import {useAuthState} from "react-firebase-hooks/auth";
 import ContextRegisterProvider from "./ContextRegister";
 import SignInContextProvider from "./SignInContext";
 import {getSession, isLoggedIn, startSession} from "./session";
+import TermsOfUse from "./TermsOfUse";
 
 function App() {
     const [currentUser, setCurrentUser] = useState(null);
@@ -54,6 +55,7 @@ function App() {
                             <Route path='/profile' element={<Profile/>}/>
                             <Route path='/trading' element={<Trading/>}/>
                             <Route path='/about-us' element={<AboutUs/>}/>
+                            <Route path='/tos' element={<TermsOfUse/>}/>
                         </Routes>
                     </SignInContextProvider>
                 </ContextRegisterProvider>

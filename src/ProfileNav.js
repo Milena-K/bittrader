@@ -1,5 +1,5 @@
 import './styles/Profile.css';
-import {Navbar, Nav, Button} from 'react-bootstrap';
+import {Navbar, Nav, Button, Row} from 'react-bootstrap';
 import {logout} from "./firebaseConfig";
 import {useContext, useEffect, useState} from "react";
 import {endSession, getSession, isLoggedIn} from "./session";
@@ -38,40 +38,43 @@ function ProfileNav() {
 
     return (
         <div className={"profile-navbar " + loggedIn}>
-            <Navbar variant="light">
+            <Navbar collapseOnSelect expand="sm" variant="light">
                 <Navbar.Brand href="/">
                     <div className='cex-logo'/>
                 </Navbar.Brand>
-                <Nav className="me-auto">
-                    {(!isLoggedIn() &&
-                        <>
-                            <Nav.Link href="/trading">TRADING</Nav.Link>
-                            <Nav.Link href="/about-us">ABOUT US</Nav.Link>
-                        </>
-                    )}
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="me-auto">
+                        {(!isLoggedIn() &&
+                            <>
+                                <Nav.Link href="/trading">TRADING</Nav.Link>
+                                <Nav.Link href="/about-us">ABOUT US</Nav.Link>
+                            </>
+                        )}
+                        {(isLoggedIn() &&
+                            location.pathname != "/trading" && <Nav.Link href="/trading">TRADING</Nav.Link>)}
+                        {(isLoggedIn() &&
+                            location.pathname != "/about-us" && <Nav.Link href="/about-us">ABOUT US</Nav.Link>)}
+                        {(isLoggedIn() &&
+                            location.pathname != "/profile" && <Nav.Link href="/profile">PROFILE</Nav.Link>)}
+                        {(!isLoggedIn() &&
+                            <>
+                                <Nav.Link size="sm" variant="outline-light" onClick={openSignInModal}
+                                          className="navBtn">SIGN IN</Nav.Link>
+                                <SignIn/>
+                                <Nav.Link size="sm" variant="outline-light" onClick={openRegisterModal}
+                                          className="navBtn">REGISTER</Nav.Link>
+                                <Register/>
+                            </>
+                        )}
+                    </Nav>
                     {(isLoggedIn() &&
-                        location.pathname != "/trading" && <Nav.Link href="/trading">TRADING</Nav.Link>)}
-                    {(isLoggedIn() &&
-                        location.pathname != "/about-us" && <Nav.Link href="/about-us">ABOUT US</Nav.Link>)}
-                    {(isLoggedIn() &&
-                        location.pathname != "/profile" && <Nav.Link href="/profile">PROFILE</Nav.Link>)}
-                    {(!isLoggedIn() &&
-                        <>
-                            <Nav.Link size="sm" variant="outline-light" onClick={openSignInModal}
-                                      className="navBtn">SIGN IN</Nav.Link>
-                            <SignIn/>
-                            <Nav.Link size="sm" variant="outline-light" onClick={openRegisterModal}
-                                      className="navBtn">REGISTER</Nav.Link>
-                            <Register/>
-                        </>
-                    )}
-                </Nav>
-                {(isLoggedIn() &&
-                    <Nav>
-                        <Nav.Link href="/">
-                            <Button onClick={onLogout} className="btn-exit-profile" variant="dark">EXIT</Button>
-                        </Nav.Link>
-                    </Nav>)}
+                        <Nav>
+                            <Nav.Link href="/">
+                                <Button onClick={onLogout} className="btn-exit-profile" variant="dark">EXIT</Button>
+                            </Nav.Link>
+                        </Nav>)}
+                    </Navbar.Collapse>
             </Navbar>
         </div>
     )
